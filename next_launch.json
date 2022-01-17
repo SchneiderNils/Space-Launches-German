@@ -1,0 +1,14 @@
+{
+    "next_launch": {
+        "uid": "5313804e-2f23-40bc-88d8-990a499d01a8",
+        "name": "Starlink-35 (4-6)",
+        "mission": "Starlink-35 (4-6)",
+        "firma": "SpaceX",
+        "rocket": "Falcon 9",
+        "pad": "LC-39A",
+        "ort": "Kennedy Space Center",
+        "start": "1642550640",
+        "erstellt": "1641765305",
+        "last_update_api": "1642456806"
+    }
+}
