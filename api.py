@@ -136,6 +136,8 @@ def prüfung():
         if obj['uhrzeiten']['start'] == int(launch['upcoming'][0]['sort_date']):
             print(f"{bcolors.OKGREEN}Alle Missionsdaten sind aktuell!{bcolors.ENDC}")
             print(bcolors.LINE)
+            global prüfung_aktuell
+            prüfung_aktuell = 3
         else:
             time.sleep(1.5)
             print(f"{bcolors.WARNING}Warning: Daten nicht mehr aktuell!{bcolors.ENDC}")
@@ -185,5 +187,8 @@ def senden():
         update_tweet = f"Die {obj['mission']} Mission wurde verschoben!\nSie startet jetzt am {start}"
 
         api.update_status(update_tweet, attachment_url=alter_tweet)
+    elif prüfung_aktuell == 3:
+        print(f"{bcolors.OKCYAN}Keine neuen Missionsdaten vorhanden!{bcolors.ENDC}")
+        print(bcolors.LINE)
     else:
         print(f"{bcolors.BOLD}{bcolors.FAIL}ERROR: Keine aktuellen Missionsdaten vorhanden!{bcolors.ENDC}")
