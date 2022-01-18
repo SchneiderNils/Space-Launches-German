@@ -1,0 +1,18 @@
+{
+    "uid": "5313804e-2f23-40bc-88d8-990a499d01a8",
+    "name": "Starlink-35 (4-6)",
+    "slug": "starlink-35",
+    "provider": "SpaceX",
+    "rocket": "Falcon 9",
+    "pad": "LC-39A",
+    "ort": "Kennedy Space Center",
+    "mission": "Starlink-35 (4-6)",
+    "website": "https://orburl.de/PTdy9k",
+    "twitter_id": 1483485608106504195,
+    "uhrzeiten": {
+        "start": 1642550640,
+        "erstellt_api": 1641765305,
+        "update_api": 1642525206,
+        "update_json": null
+    }
+}
